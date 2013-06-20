@@ -3,11 +3,10 @@ describe('admin edit user', function() {
   beforeEach(function() {
     browser().navigateTo('/admin/users/new');
     input('user.email').enter('admin@abc.com');
-    
     input('user.password').enter('changeme');
-    
     //element('button.clear').click();
     element('button.login').click();
+    pause();
     expect()
 
     
